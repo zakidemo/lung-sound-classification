@@ -1,22 +1,19 @@
-# Lung Sound Classification using CQT-VMD and Deep Learning
-Leveraging CQT-VMD and Pre-trained AlexNet Architecture for Accurate Pulmonary Disease Classification from Lung Sound Signals
+# Pulmonary Disease Classification
 
+This repository contains the code for the project titled "Leveraging CQT-VMD and Pre-trained AlexNet Architecture for Accurate Pulmonary Disease Classification from Lung Sound Signals".
 
-This repository contains the implementation of our study on classifying lung sounds using CQT-VMD and deep learning models (AlexNet and SqueezeNet).
+## Files
 
-## Repository Structure
-- `data/`: Directory containing the train and test datasets.
-- `scripts/`: Directory containing the MATLAB scripts for data preparation, training, and evaluation.
-- `results/`: Directory for storing results and logs.
+1. **data_preparation.m**: This script preprocesses the lung sound signals and generates spectrogram images using CQT and VMD.
+2. **VMD.m**: This script contains the implementation of the Variational Mode Decomposition (VMD) algorithm.
+3. **alexnet_training.m**: This script trains an AlexNet model for pulmonary disease classification using the generated spectrogram images.
 
-## Getting Started
+## Usage
 
-### Prerequisites
-- MATLAB R2023a
-- Deep Learning Toolbox
+1. **Data Preparation**: Run `data_preparation.m` to preprocess the lung sound signals and generate the spectrogram images.
+2. **Training**: Run `alexnet_training.m` to train the AlexNet model using the preprocessed data.
+3. **Evaluation**: The trained model will be evaluated and the test accuracy will be displayed.
 
-### Instructions
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/zakidemo/lung-sound-classification.git
-   cd lung-sound-classification
+## References
+
+- K. Dragomiretskiy, D. Zosso, "Variational Mode Decomposition," IEEE Trans. on Signal Processing (in press).(http://dx.doi.org/10.1109/TSP.2013.2288675)
